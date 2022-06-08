@@ -5,8 +5,20 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.home),
-        title: Text('Home'),
+        leading: const Icon(
+          Icons.home,
+        ),
+        title: const Text(
+          'Home',
+        ),
+        actions: [
+          Icon(
+            Icons.notification_important,
+          ),
+          Icon(
+            Icons.search,
+          ),
+        ],
       ),
     );
   }
